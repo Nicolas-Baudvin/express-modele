@@ -60,6 +60,13 @@ log.info(
 globby([
     basePath + '/*',
     basePath + '/.*',
+    basePath + '/Controllers',
+    basePath + '/Middlewares',
+    basePath + '/Models',
+    basePath + '/Routers',
+    basePath + '/test',
+    basePath + '/Utils',
+    basePath + '/views',
     '!bin',
     '!node_modules'
 ]).then(function (files) {
